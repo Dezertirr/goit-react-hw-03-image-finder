@@ -1,0 +1,21 @@
+.SearchBar{
+  background-color: blue;
+  height: 50px;
+}
+
+.SearchBarForm{
+    display: flex;
+    justify-content: center;
+
+    height: 45px;
+
+}
+
+.SearchBarInput{
+    border-radius: 15px;
+}
+
+.SearchBarButton{
+    border-radius: 15px;
+    margin-left: 15px;
+}

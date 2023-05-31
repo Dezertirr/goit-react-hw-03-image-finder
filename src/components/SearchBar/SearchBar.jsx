@@ -1,6 +1,7 @@
 
 import { Component } from "react";
 import {getSearchPhotoAPI} from '../APIservice/APIService.js'
+import styles from './SearchBar.module.css'
 
 class SearchBar extends Component {
 
@@ -9,15 +10,17 @@ class SearchBar extends Component {
 
     render () {
         return (
-            <form onSubmit={this.props.handleSubmit}>
+            <div className={styles.SearchBar}>
+            <form className={styles.SearchBarForm} onSubmit={this.props.handleSubmit}>
                 <input
-                
+                className={styles.SearchBarInput}
                 type='text'
                 placeholder="Photo Search"
                 value={this.props.query}
                 onChange={this.props.handleChange} />
-                <button type="submit">Search</button>
+                <button className={styles.SearchBarButton} type="submit">Search</button>
             </form>
+            </div>
         )
     }
 }
