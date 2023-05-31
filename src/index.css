@@ -13,3 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sl-overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
