@@ -1,6 +1,5 @@
 
 import { Component } from "react";
-import {getSearchPhotoAPI} from '../APIservice/APIService.js'
 import styles from './SearchBar.module.css'
 
 class SearchBar extends Component {
