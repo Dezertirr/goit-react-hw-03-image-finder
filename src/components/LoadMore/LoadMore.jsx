@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from './LoadMore.module.css'
 
 class LoadMore extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class LoadMore extends Component {
 
   render() {
     return (
-      <button type="submit" onClick={this.props.loadMoreButton}>
+      <button className={styles.LoadMoreBtn} type="submit" onClick={this.props.loadMoreButton}>
         Load More
       </button>
     );
